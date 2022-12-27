@@ -2,33 +2,33 @@
 #include <iostream>
 using namespace std;
 int main(){
-	system("title ±ù±¢²ÂÏë£¨»ùÓÚÔ·ÕÜº­£©");
-	cout<<"ÇëÊäÈë³õÊ¼ÕıÕûÊı£¨ÊäÈëĞ¡Êı¡¢¸ºÊı»á×Ô¶¯È¡ÕıÕûÊıÖµ£¬ÊäÈë¡°1¡±ÒÔÁË½â±ù±¢²ÂÏë£©£º";
-	long long input;
-	cin>>input;
-	input=abs(input);
-	if(input==0){
-		cout<<"ÊäÈë²»Ö§³Ö¡£°´ÏÂÈÎÒâ¼üÖÕÖ¹³ÌĞò¡£";
-		system("pause >nul");
-		return 0;
+	system("title å†°é›¹çŒœæƒ³"); //æ›´æ”¹çª—å£æ ‡é¢˜
+	cout<<"è¯·è¾“å…¥åˆå§‹æ­£æ•´æ•°ï¼ˆè¾“å…¥å°æ•°ã€è´Ÿæ•°ä¼šè‡ªåŠ¨å–æ­£æ•´æ•°å€¼ï¼Œè¾“å…¥â€œ1â€ä»¥äº†è§£å†°é›¹çŒœæƒ³ï¼‰ï¼š"; //è¾“å‡ºæç¤º
+	long long input; //å®šä¹‰é•¿æ•´å‹å˜é‡
+	cin>>input; //è¾“å…¥å˜é‡
+	input=abs(input); //å–ç»å¯¹å€¼
+	if(input==0){ //åˆ¤æ–­è¾“å…¥å­—æ¯æˆ–ç¬¦å·æˆ–0
+		cout<<"è¾“å…¥ä¸æ”¯æŒã€‚æŒ‰ä¸‹ä»»æ„é”®ç»ˆæ­¢ç¨‹åºã€‚";
+		system("pause >nul"); //æš‚åœç¨‹åº
+		return 0; //é€€å‡º
 	}
-	if(input==1){
-		system("start https://baike.baidu.com/item/%E5%86%B0%E9%9B%B9%E7%8C%9C%E6%83%B3");
+	if(input==1){ //åˆ¤æ–­è¾“å…¥1
+		system("start https://baike.baidu.com/item/%E5%86%B0%E9%9B%B9%E7%8C%9C%E6%83%B3"); //è°ƒç”¨Windowsç³»ç»Ÿå‡½æ•°æ‰“å¼€ç½‘é¡µ
 	}
-	else{
-		cout<<"¼ÆËã¹ı³Ì£º";
-		while ((input!=1)&&(input!=0)){
-			input=abs(input);
-			if (input%2==0){
-				input/=2;
+	else{ //ä¸»ç¨‹åº
+		cout<<"è®¡ç®—è¿‡ç¨‹ï¼š"; //è¾“å‡ºæç¤º
+		while ((input!=1)&&(input!=0)){ //è®¾ç½®ç»ˆæ­¢å¾ªç¯æ¡ä»¶
+			input=abs(input); //æ¯æ¬¡å–ç»å¯¹å€¼ï¼Œé˜²æ­¢èŒƒå›´æº¢å‡ºå¸¦æ¥çš„è´Ÿæ•°
+			if (input%2==0){ //å¶æ•°åˆ¤æ–­
+				input/=2; //å¶æ•°é™¤ä»¥2
 			}
-			else{
-				input=input*3+1;
+			else{ //å¥‡æ•°åˆ¤æ–­
+				input=input*3+1; //å¥‡æ•°ä¹˜3åŠ 1
 			}
-			cout<<input<<"  ";
+			cout<<input<<"  "; //è¾“å‡ºé—´éš”
 		}
-		cout<<endl<<"¼ÆËã½áÊø£¬°´ÏÂÈÎÒâ¼üÖÕÖ¹³ÌĞò¡£";
-		system("pause >nul");
+		cout<<endl<<"è®¡ç®—ç»“æŸï¼ŒæŒ‰ä¸‹ä»»æ„é”®ç»ˆæ­¢ç¨‹åºã€‚"; //è¾“å‡ºæç¤º
+		system("pause >nul"); //æš‚åœç¨‹åº
 	}
-	return 0;
+	return 0; //è¿”å›mainå‡½æ•°çš„å€¼
 }
